@@ -91,4 +91,162 @@ export const option2 = {
     }
   }
 
+  // Security Posture
+
+  export const data3 = {
+    labels: ['Mitigated', 'Not Mitigated', 'Marked As Benign'],
+    datasets: [
+      {
+      labels: '369',
+      data: [280, 30],
+      backgroundColor: 'lightblue',
+      borderColor: 'lightblue',
+      pointBorderColor: 'lightblue',
+      borderWidth:1
+    }
+  ]
+  }
+  
+  export const option3 = {
+    indexAxis: 'y' ,
+    elements: {
+      bar: {
+        borderWidth: 2,
+      },
+    },
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'right',
+      },
+      title: {
+        display: true,
+        text: 'Chart.js Horizontal Bar Chart',
+      },
+      scales: {
+        x: {
+          min: 0,
+          max: 1600
+        }
+      }
+    }
+  
+  }
+
+  // Analyst Verdicts - Threats
+
+  export const data4 = {
+    labels: ['Undefined', ' Fake positive', 'True Positive', 'Suspicious'],
+    datasets: [
+      {
+      labels: '369',
+      data: [280,50,10,8],
+      backgroundColor: 'lightblue',
+      borderColor: 'lightblue',
+      pointBorderColor: 'lightblue',
+      borderWidth:1
+    }
+  ]
+  }
+  
+  export const option4 = {
+      scales: {
+        x: {
+          min: 0,
+          max: 1600
+        }
+      }
+    }
+
+      // Indected EndPoint
+
+  export const data5 = {
+    labels: ['Healthy', 'Infected'],
+    datasets: [
+      {
+      labels: '369',
+      data: [4001, 100],
+      backgroundColor: 'lightblue',
+      borderColor: 'lightblue',
+      pointBorderColor: 'lightblue',
+      borderWidth:1
+    }
+  ]
+  }
+  
+  export const option5 = {
+    indexAxis: 'y' ,
+    elements: {
+      bar: {
+        borderWidth: 2,
+      },
+    },
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'right',
+      },
+      title: {
+        display: true,
+        text: 'Chart.js Horizontal Bar Chart',
+      },
+      scales: {
+        x: {
+          min: 0,
+          max: 1600
+        }
+      }
+    }
+  
+  }
+
+  // Unmitigated Threats
+
+  export const data6 = {
+    labels: ['Mitigated', 'Not Mitigated', 'Marked As Benign'],
+    datasets: [
+      {
+      labels: '369',
+      data: [301, 15],
+      backgroundColor: 'lightblue',
+      borderColor: 'lightblue',
+      pointBorderColor: 'lightblue',
+      borderWidth:1
+    }
+  ]
+  }
+  
+  export const option6 = {
+      scales: {
+        x: {
+          min: 0,
+          max: 1600
+        }
+      }
+    }
+
+    // Agents Requring Attention
+    export const data7 = {
+      labels: ['Attention needed', 'Missing permission', 'Unprotected', 'incompatible OS', 'Agent suppressed'],
+      datasets: [
+        {
+        labels: '369',
+        data: [75, 30],
+        backgroundColor: 'lightblue',
+        borderColor: 'lightblue',
+        pointBorderColor: 'lightblue',
+        borderWidth:1
+      }
+    ]
+    }
+    
+    export const option7 = {
+        scales: {
+          x: {
+            min: 0,
+            max: 1600
+          }
+        }
+      }
+
 
