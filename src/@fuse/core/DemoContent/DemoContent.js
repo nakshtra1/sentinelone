@@ -1,7 +1,8 @@
 import { memo } from "react";
 // import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, CartesianGrid, ComposedChart, Bar, Tooltip, Legend, } from "recharts";
-import { data,data2,data1,data3,data4,data5,data6,options,option1,option2,option3,option4,option5,option6, option7, data7} from './Data1chart'
-import { Line, Bar} from 'react-chartjs-2'
+import { data,data2,data1,data3,data4,data5,data6,data7,data8,data9,
+  options,option1,option2,option3,option4,option5,option6, option7,option8,option9, data10, option10 } from './Data1chart'
+import { Line, Bar,Pie} from 'react-chartjs-2'
 import {
   Chart as ChartJS,
   BarElement,
@@ -10,7 +11,8 @@ import {
   LinearScale,// y axis
   PointElement,
   Tooltip,
-  Legend
+  Legend,
+  ArcElement
 } from 'chart.js';
 
 ChartJS.register(
@@ -20,7 +22,8 @@ ChartJS.register(
   LinearScale,
   PointElement,
   Tooltip,
-  Legend
+  Legend,
+  ArcElement
 )
 
 function DemoContent() {
@@ -147,6 +150,54 @@ function DemoContent() {
         options={option7}
         ></Bar>
       </div>
+
+      {/* Pie Chart */}
+      <h1>Secured Devices bt OS</h1>
+
+      <div style={
+        {
+          padding:'20px',
+          width:'30%'
+        }
+      }>
+        <Pie
+        data = {data8}
+        options = {option8}
+        >
+        </Pie>
+      </div>
+
+      {/* Threats by Detection Trigger */}
+
+      <h1>Threats by Detection Trigger</h1>
+
+<div style={
+  {
+    padding:'20px',
+    width:'30%'
+  }
+}>
+  <Pie
+  data = {data9}
+  options = {option9}
+  >
+  </Pie>
+</div>
+
+{/* Secured Devices bt Role */}
+<h1>Secured Devices bt Role</h1>
+<div style={
+  {
+    padding:'20px',
+    width:'30%'
+  }
+}>
+  <Pie
+  data = {data10}
+  options = {option10}
+  >
+  </Pie>
+</div>
       
 
     </>

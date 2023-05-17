@@ -249,4 +249,52 @@ export const option2 = {
         }
       }
 
+      // Pie Chart
+//Secured Devices bt OS
+
+export const data8 ={
+  labels: ['windows','mac OS', 'Linux', 'window Legacy'],
+  datasets:[
+    {
+      data: [9,.2,0,0,0],
+      backgroundColor:['#5D00C7','#5E009C','#9842DA','#B637CA' ]
+    }
+  ]
+}
+
+export const option8={
+
+}
+
+// Threats by Detection Trigger
+export const data9 ={
+  labels: ['Agent Policy','Full Disk Scan', 'Local agent command', 'Deep visibility Command', 'Management console API', 'custom Rule', 'Custom Alert'],
+  datasets:[
+    {
+      data: [9,2,.1,0,0],
+      backgroundColor:['#5D00C7','#5E009C','#9842DA','#B637CA','#A495FF','#585EFF','#7FBFFF','#2E373C' ]
+    }
+  ]
+}
+
+export const option9={
+
+}
+
+// Secured Devices bt Role
+
+export const data10 ={
+  labels: ['windows','mac OS', 'Linux', 'window Legacy'],
+  datasets:[
+    {
+      data: [9,4,2,.1,0],
+      backgroundColor:['#5D00C7','#5E009C','#9842DA','#B637CA' ]
+    }
+  ]
+}
+
+export const option10={
+
+}
+
 
