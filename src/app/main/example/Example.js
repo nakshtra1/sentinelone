@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next';
 import FusePageSimple from '@fuse/core/FusePageSimple';
 import DemoContent from '@fuse/core/DemoContent';
 import Card from "react-bootstrap/Card";
+import Dropdowns from 'app/theme-layouts/shared-components/Dropdown';
+import ControlDropdown from './i18n/ControlDropdown';
 
 const Root = styled(FusePageSimple)(({ theme }) => ({
   '& .FusePageSimple-header': {
@@ -23,22 +25,26 @@ function ExamplePage(props) {
   return (
     <Root
       header={
-        <div className="p-24">
-          <h4>{t('TITLE')}</h4>
-        </div>
+        <>
+          <div className="p-10" style={{display:"flex" ,justifyContent:"space-between"}}>
+            <h4>{t('TITLE')}</h4>
+            <ControlDropdown />
+          </div>
+          <div>
+          </div>
+        </>
       }
       content={
         <div className="p-10">
-          <p style={{fontSize : 10, marginLeft : '80rem' }}>Dashboard Last Saved May 15,2023,7:54:16 AM</p>
+          {/* <p style={{fontSize : 10, marginLeft : '80rem' }}>Dashboard Last Saved May 15,2023,7:54:16 AM</p> */}
           <Card style={{ margin: "1rem" }}>
-          <Card.Body>
-            <Card.Text>
-              <h4>Threat Landscape</h4>
-            </Card.Text>
-          </Card.Body>
+            <Card.Body>
+              <Card.Text>
+                <h4>Threat Landscape</h4>
+              </Card.Text>
+            </Card.Body>
           </Card>
-          
-          <br />
+
           <DemoContent />
         </div>
       }

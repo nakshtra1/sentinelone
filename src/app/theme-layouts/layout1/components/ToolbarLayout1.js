@@ -17,6 +17,7 @@ import NavbarToggleButton from '../../shared-components/NavbarToggleButton';
 import UserMenu from '../../shared-components/UserMenu';
 import QuickPanelToggleButton from '../../shared-components/quickPanel/QuickPanelToggleButton';
 import ChatPanelToggleButton from '../../shared-components/chatPanel/ChatPanelToggleButton';
+import Dropdowns from 'app/theme-layouts/shared-components/Dropdown';
 
 function ToolbarLayout1(props) {
   const config = useSelector(selectFuseCurrentLayoutConfig);
@@ -44,8 +45,8 @@ function ToolbarLayout1(props) {
                 <Hidden lgDown>
                   {(config.navbar.style === 'style-3' ||
                     config.navbar.style === 'style-3-dense') && (
-                    <NavbarToggleButton className="w-40 h-40 p-0 mx-0" />
-                  )}
+                      <NavbarToggleButton className="w-40 h-40 p-0 mx-0" />
+                    )}
 
                   {config.navbar.style === 'style-1' && !navbar.open && (
                     <NavbarToggleButton className="w-40 h-40 p-0 mx-0" />
@@ -57,26 +58,26 @@ function ToolbarLayout1(props) {
                 </Hidden>
               </>
             )}
-
-            <Hidden lgDown>
-              <NavigationShortcuts />
-            </Hidden>
+          </div>
+          <div className="flex flex-1 px-16">
+              <Dropdowns className="w-40 h-40 p-0 mx-0 sm:mx-8"/>
           </div>
 
           <div className="flex items-center px-8 h-full overflow-x-auto">
-            <LanguageSwitcher />
 
-            <AdjustFontSize />
+            {/* <LanguageSwitcher /> */}
 
-            <FullScreenToggle />
+            {/* <AdjustFontSize /> */}
 
-            <NavigationSearch />
+            {/* <FullScreenToggle /> */}
 
-            <Hidden lgUp>
+            {/* <NavigationSearch /> */}
+
+            {/* <Hidden lgUp>
               <ChatPanelToggleButton />
-            </Hidden>
+            </Hidden> */}
 
-            <QuickPanelToggleButton />
+            {/* <QuickPanelToggleButton /> */}
 
             <NotificationPanelToggleButton />
 
