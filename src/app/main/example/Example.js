@@ -2,6 +2,7 @@ import { styled } from '@mui/material/styles';
 import { useTranslation } from 'react-i18next';
 import FusePageSimple from '@fuse/core/FusePageSimple';
 import DemoContent from '@fuse/core/DemoContent';
+import Card from "react-bootstrap/Card";
 
 const Root = styled(FusePageSimple)(({ theme }) => ({
   '& .FusePageSimple-header': {
@@ -27,9 +28,16 @@ function ExamplePage(props) {
         </div>
       }
       content={
-        <div className="p-24">
+        <div className="p-10">
           <p style={{fontSize : 10, marginLeft : '80rem' }}>Dashboard Last Saved May 15,2023,7:54:16 AM</p>
-          <h4>Threat Landscape</h4>
+          <Card style={{ margin: "1rem" }}>
+          <Card.Body>
+            <Card.Text>
+              <h4>Threat Landscape</h4>
+            </Card.Text>
+          </Card.Body>
+          </Card>
+          
           <br />
           <DemoContent />
         </div>

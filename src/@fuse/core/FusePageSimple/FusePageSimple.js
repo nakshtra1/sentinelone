@@ -29,7 +29,7 @@ const Root = styled('div')(({ theme, ...props }) => ({
     zIndex: 2,
     minWidth: 0,
     height: '100%',
-    backgroundColor: theme.palette.background.default,
+    // backgroundColor: theme.palette.background.default,
 
     ...(props.scroll === 'content' && {
       position: 'absolute',
@@ -73,13 +73,13 @@ const Root = styled('div')(({ theme, ...props }) => ({
     alignItems: 'center',
   },
 
-  '& .FusePageSimple-content': {
-    display: 'flex',
-    flex: '1 1 auto',
-    alignItems: 'start',
-    minHeight: 0,
-    overflowY: 'auto',
-  },
+  // '& .FusePageSimple-content': {
+  //   display: 'flex',
+  //   flex: '1 1 auto',
+  //   alignItems: 'start',
+  //   minHeight: 0,
+  //   overflowY: 'auto',
+  // },
 
   '& .FusePageSimple-sidebarWrapper': {
     overflow: 'hidden',

@@ -9,6 +9,8 @@ import { createRoot } from 'react-dom/client';
 import App from './app/App';
 import * as serviceWorker from './serviceWorker';
 import reportWebVitals from './reportWebVitals';
+//react bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
